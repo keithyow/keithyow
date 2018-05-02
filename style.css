@@ -37,17 +37,6 @@ nav ul li {
 	margin-left: 16px;
 }
 
-/*Adds colour to navigation bar elements*/
-ul li a{
-	color: #11479E;
-	transition: color 1s;
-}
-
-/*Adds colour change to nav bar elements when mouse hovers over the elements*/
-ul li a:hover {
-	color: #7EC3E6;
-}
-
 /*Default design for h1, h2 and p*/
 h1 {
 	font-size: 60px;
@@ -63,8 +52,17 @@ p{
 }
 
 /*Changes font to Signika*/
-.nice-font{
+/*Adds colour to elements*/
+/*Adds colour change to elements when mouse hovers over the elements*/
+.nice-effect{
 	font-family: 'Signika', sans-serif;
+	color: #11479E;
+	transition: color 1s;
+	text-decoration: none;
+}
+
+.nice-effect:hover {
+	color: #7EC3E6;
 }
 
 /*img {
@@ -111,10 +109,6 @@ section table {
 	background-color: yellow;
 }
 
-/*Removes text decoration for all elements that includes links*/
-a {
-	text-decoration: none;
-}
 
 /*Fixes the position of the Back To Top Button in the bottom right of the webpage*/
 /*Also adds minor design*/
