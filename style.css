@@ -1,0 +1,215 @@
+/*Default for body elements*/
+body {
+  font-family: "Arial", "sans-serif";
+  line-height: 1.4em;
+  background-image: url("./images/weather.png");
+}
+
+/*Add design to header with padding, margin and border*/
+header {
+	text-align: center;
+	text-decoration: underline overline;
+	text-decoration-color: #455254;
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 5px;
+	border: 2px solid cyan;
+	border-radius: 1em;
+}
+
+/*Add formatting to navigation bar*/
+nav {
+	border: 1px solid grey;
+	border-radius: 1em;
+	background-color: rgba(117, 248, 255, 0.5);
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: 'Signika', sans-serif;
+
+}
+
+nav ul {
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-left: 16px;
+}
+
+/*Adds colour to navigation bar elements*/
+ul li a{
+	color: #11479E;
+	transition: color 1s;
+}
+
+/*Adds colour change to nav bar elements when mouse hovers over the elements*/
+ul li a:hover {
+	color: #7EC3E6;
+}
+
+/*Default design for h1, h2 and p*/
+h1 {
+	font-size: 60px;
+	color: lightskyblue;
+}
+
+h2 {
+	color: rgba(240, 185, 7, 1.0);
+}
+
+p{
+	font-family: 'Fredoka One', 'serif', cursive; 
+}
+
+/*Changes font to Signika*/
+.nice-font{
+	font-family: 'Signika', sans-serif;
+}
+
+/*img {
+	/*Bonus Challenge Attempts*/
+	/*border-radius: 100px 0px 0px 0px;*/
+	/*border-radius: 100px 100px 0px 0px;*/
+	/*border-radius: 100px 0px 100px 0px;*
+}
+*/
+
+/*Add design for section elements*/
+section {
+	background-color: rgba(255, 255, 255, 0.25);
+	padding: 15px;
+	margin-bottom: 5px;
+	border: 1px groove cyan;
+	border-radius: 1em;
+}
+
+/*Formatting for the table*/
+table {
+	font-family: "Comic Sans MS", "sans-serif";
+}
+
+section table {
+	margin: auto;
+}
+
+/*Adds design to the photos in the Gallery Section*/
+.special-gallery {
+	display: inline-block;
+	height: 130px;
+	width: 130px;
+	border-radius: 65px 0px 65px 0px;
+}
+
+/*Formats icon sizes*/
+.icon-resize {
+	max-width: 25px;
+}
+
+/*Adds a highlight to the text*/
+.spotlight {
+	background-color: yellow;
+}
+
+/*Removes text decoration for all elements that includes links*/
+a {
+	text-decoration: none;
+}
+
+/*Fixes the position of the Back To Top Button in the bottom right of the webpage*/
+/*Also adds minor design*/
+#to-top{
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	border: 1px solid #7FEAF0;
+	border-radius: 50%;
+	background-color: #FFF08C;
+	text-decoration: none;
+}
+
+/*Sets the width and margin for the Main Content Section*/
+.container {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+/*Test to link to About Section*/
+#link1 {
+	/*test id just for linking to section*/
+}
+
+/*Formats the Contents, Sidebar and Footer */
+div article {
+	width: 70%;
+	max-width: 896px;
+	float: right;
+}
+
+/*Sidebar Formatting*/
+div aside {
+	float: left;
+	background-color: rgba(255, 255, 255, 0.25);
+	padding: 15px;
+	margin-bottom: 5px;
+	border: 1px groove cyan;
+	border-radius: 1em;
+}
+
+/*Responsive Formatting Section*/
+@media(max-width: 855px){
+	/*Responsive Formatting for the Contents*/
+	div article{
+		width: 100%;
+	}
+
+	/*For responsiveness of YouTube video*/
+	/*Extracted from StackOverflow*/
+	/*I have no idea "for now" what it does apart from the fact that it makes my YouTube video responsive*/
+	.wrapper {
+	    position: relative;
+	    padding-bottom: 56.25%; /* 16:9 */
+	    padding-top: 25px;
+	    height: 0;
+	}
+
+	.wrapper iframe {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+
+}
+
+
+@media(min-width: 855px){
+	aside {
+		width: 25%;
+		max-width: 320px;
+	}
+	
+}
+
+footer {
+	clear: both;
+}
+
+/*Format image in Sidebar*/
+aside img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 150px;
+	border: 1.5px solid black;
+	border-radius: 50%;
+}
+
+/*Centers text*/
+.go-center {
+	text-align: center;
+
+}
+
